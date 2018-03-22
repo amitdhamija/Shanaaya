@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PartyLET.ttf">
+            <string>PartyLetPlain</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Event Details View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EventDetailsViewController" customModule="Shanaaya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiara" translatesAutoresizingMaskIntoConstraints="NO" id="qLb-K9-Mx3">
+                                <rect key="frame" x="91" y="10" width="193" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="9T3-D5-Fti"/>
+                                    <constraint firstAttribute="width" constant="193" id="ybv-pK-DMt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shanaaya-crown" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-64-CO4">
+                                <rect key="frame" x="74.5" y="100" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="OAX-rL-bsW"/>
+                                    <constraint firstAttribute="width" constant="225" id="kpo-c9-aaS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY MAGICAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfE-Jy-o57">
+                                <rect key="frame" x="136" y="345" width="103" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.85490196080000003" green="0.094117647060000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST BIRTHDAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="5RD-4b-Mw0">
+                                <rect key="frame" x="0.0" y="371" width="375" height="46"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="39"/>
+                                <color key="textColor" red="0.53725490196078429" green="0.2196078431372549" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SATURDAY, MAY 26 AT 6PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18x-He-zv2">
+                                <rect key="frame" x="63" y="432" width="249" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="1" green="0.43529411759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhc-qS-jux" customClass="PinkButton" customModule="Shanaaya" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="597" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZXr-Pz-9lR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eAv-Na-0cF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="ADD TO MY CALENDAR"/>
+                                <connections>
+                                    <action selector="addCalendarEventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCf-fp-e6R"/>
+                                    <segue destination="3zx-5l-DJI" kind="show" id="cef-S1-wxe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85490196078431369" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CfE-Jy-o57" firstAttribute="top" secondItem="Ogd-64-CO4" secondAttribute="bottom" constant="20" id="0Fw-0l-LqA"/>
+                            <constraint firstItem="CfE-Jy-o57" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0VP-lL-lYk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dhc-qS-jux" secondAttribute="bottom" constant="20" id="Bf5-7B-GD3"/>
+                            <constraint firstItem="5RD-4b-Mw0" firstAttribute="top" secondItem="CfE-Jy-o57" secondAttribute="bottom" constant="5" id="KHG-ba-ei1"/>
+                            <constraint firstItem="dhc-qS-jux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NT1-27-P5S"/>
+                            <constraint firstItem="qLb-K9-Mx3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Puu-4p-lLB"/>
+                            <constraint firstItem="18x-He-zv2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDq-3N-r4Z"/>
+                            <constraint firstItem="5RD-4b-Mw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UgT-XL-XZT"/>
+                            <constraint firstItem="Ogd-64-CO4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNX-6n-4Bm"/>
+                            <constraint firstItem="18x-He-zv2" firstAttribute="top" secondItem="5RD-4b-Mw0" secondAttribute="bottom" constant="15" id="ZHY-Wl-lmx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5RD-4b-Mw0" secondAttribute="trailing" id="c3b-M5-bRg"/>
+                            <constraint firstItem="qLb-K9-Mx3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-10" id="fGh-zd-TYA"/>
+                            <constraint firstItem="Ogd-64-CO4" firstAttribute="top" secondItem="qLb-K9-Mx3" secondAttribute="bottom" constant="-55" id="pUK-bV-HSe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addCalendarEventButton" destination="dhc-qS-jux" id="KAq-yb-Hg6"/>
+                        <outlet property="profileImageView" destination="Ogd-64-CO4" id="cQ4-OK-lVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--User Details View Controller-->
+        <scene sceneID="EO1-ge-JSX">
+            <objects>
+                <viewController id="3zx-5l-DJI" customClass="UserDetailsViewController" customModule="Shanaaya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKu-Vh-7ft">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYN-1g-fgC">
+                                <rect key="frame" x="120.5" y="30" width="134" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.85490196078431369" green="0.094117647058823528" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyb-Qg-bR0">
+                                <rect key="frame" x="149.5" y="120.5" width="77.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.85490196080000003" green="0.094117647060000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PIc-k6-E48">
+                                <rect key="frame" x="20" y="60.5" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-Z3-jEW">
+                                <rect key="frame" x="20" y="151" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-Hq-Fuu" customClass="PinkButton" customModule="Shanaaya" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="211" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jkf-BP-DT0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="dsA-oU-hnq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addCalendarEventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6f1-qE-7Jf"/>
+                                    <action selector="startButtonTapped:" destination="3zx-5l-DJI" eventType="touchUpInside" id="lMP-Ex-Ayg"/>
+                                    <segue destination="WKD-WQ-Dac" kind="show" action="showDetailViewController:sender:" id="RC3-Sc-IdE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Password" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilx-pt-Pno">
+                                <rect key="frame" x="20" y="186" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85490196078431369" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="PIc-k6-E48" firstAttribute="top" secondItem="rYN-1g-fgC" secondAttribute="bottom" constant="10" id="3IX-tR-T9g"/>
+                            <constraint firstItem="PIc-k6-E48" firstAttribute="leading" secondItem="r3q-aN-8Ph" secondAttribute="leading" constant="20" id="8Ym-Na-lJ8"/>
+                            <constraint firstItem="eyb-Qg-bR0" firstAttribute="top" secondItem="PIc-k6-E48" secondAttribute="bottom" constant="30" id="BBK-po-eKR"/>
+                            <constraint firstItem="Ilx-pt-Pno" firstAttribute="top" secondItem="sCD-Z3-jEW" secondAttribute="bottom" constant="5" id="FoE-bo-Icv"/>
+                            <constraint firstItem="HdJ-Hq-Fuu" firstAttribute="centerX" secondItem="HKu-Vh-7ft" secondAttribute="centerX" id="G1H-ih-mxQ"/>
+                            <constraint firstItem="Ilx-pt-Pno" firstAttribute="leading" secondItem="r3q-aN-8Ph" secondAttribute="leading" constant="20" id="IBI-TW-4OP"/>
+                            <constraint firstItem="sCD-Z3-jEW" firstAttribute="top" secondItem="eyb-Qg-bR0" secondAttribute="bottom" constant="10" id="IUh-ur-Uup"/>
+                            <constraint firstItem="rYN-1g-fgC" firstAttribute="top" secondItem="r3q-aN-8Ph" secondAttribute="top" constant="10" id="VEY-gy-V6i"/>
+                            <constraint firstItem="r3q-aN-8Ph" firstAttribute="trailing" secondItem="Ilx-pt-Pno" secondAttribute="trailing" constant="20" id="WB6-Z2-L2M"/>
+                            <constraint firstItem="HdJ-Hq-Fuu" firstAttribute="top" secondItem="sCD-Z3-jEW" secondAttribute="bottom" constant="30" id="XgJ-th-qkd"/>
+                            <constraint firstItem="r3q-aN-8Ph" firstAttribute="trailing" secondItem="sCD-Z3-jEW" secondAttribute="trailing" constant="20" id="aAN-3G-1v9"/>
+                            <constraint firstItem="rYN-1g-fgC" firstAttribute="centerX" secondItem="HKu-Vh-7ft" secondAttribute="centerX" id="cxQ-5T-n5b"/>
+                            <constraint firstItem="sCD-Z3-jEW" firstAttribute="leading" secondItem="r3q-aN-8Ph" secondAttribute="leading" constant="20" id="gDc-LU-Jc6"/>
+                            <constraint firstItem="r3q-aN-8Ph" firstAttribute="trailing" secondItem="PIc-k6-E48" secondAttribute="trailing" constant="20" id="lp4-0l-MmC"/>
+                            <constraint firstItem="eyb-Qg-bR0" firstAttribute="centerX" secondItem="HKu-Vh-7ft" secondAttribute="centerX" id="ray-v3-ad7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r3q-aN-8Ph"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ldn-PQ-eNM"/>
+                    <connections>
+                        <outlet property="incorrectPasswordLabel" destination="Ilx-pt-Pno" id="gJs-0P-mA6"/>
+                        <outlet property="nameTextField" destination="PIc-k6-E48" id="tra-ih-1zW"/>
+                        <outlet property="passwordTextField" destination="sCD-Z3-jEW" id="GXc-E4-28C"/>
+                        <outlet property="startButton" destination="HdJ-Hq-Fuu" id="H0u-2o-Y8c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93R-VW-QoQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="134"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="WRz-bD-UwG">
+            <objects>
+                <viewController id="WKD-WQ-Dac" customClass="QuizViewController" customModule="Shanaaya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lbR-6Z-2Xg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQx-yi-1qj" customClass="PinkButton" customModule="Shanaaya" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="597" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="gzR-MT-hyO"/>
+                                    <constraint firstAttribute="height" constant="50" id="qe0-jt-8VC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addCalendarEventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Kx-ib-2QI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qml-so-vpu" customClass="PinkButton" customModule="Shanaaya" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="527" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pt1-Pr-6t8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="uUj-f0-Odm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addCalendarEventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKa-oo-3C6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-pN-8yq" customClass="PinkButton" customModule="Shanaaya" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="457" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K3F-4H-yIx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="XGH-Oe-4GA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addCalendarEventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="woQ-77-URy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-r5-mrO" customClass="PinkButton" customModule="Shanaaya" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="387" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="c7I-Xr-gyp"/>
+                                    <constraint firstAttribute="height" constant="50" id="uLn-fp-bdb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addCalendarEventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JAe-ej-hp7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-sm-TId">
+                                <rect key="frame" x="10" y="74" width="355" height="51.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlS-4A-UTg">
+                                        <rect key="frame" x="0.0" y="1" width="172.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWz-fC-Zjg">
+                                                <rect key="frame" x="23" y="10" width="127.5" height="30"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" red="0.85490196080000003" green="0.094117647060000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="KWz-fC-Zjg" firstAttribute="top" secondItem="mlS-4A-UTg" secondAttribute="top" constant="10" id="DyK-GU-HCE"/>
+                                            <constraint firstAttribute="bottom" secondItem="KWz-fC-Zjg" secondAttribute="bottom" constant="10" id="ojV-2X-iEG"/>
+                                            <constraint firstItem="KWz-fC-Zjg" firstAttribute="centerX" secondItem="mlS-4A-UTg" secondAttribute="centerX" id="wdA-wx-hxo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bku-tK-hFi">
+                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="51.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mac-ez-8Uy">
+                                                <rect key="frame" x="46.5" y="10" width="81" height="31.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" red="0.85490196080000003" green="0.094117647060000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Mac-ez-8Uy" firstAttribute="centerX" secondItem="Bku-tK-hFi" secondAttribute="centerX" id="NTI-Qa-ori"/>
+                                            <constraint firstItem="Mac-ez-8Uy" firstAttribute="top" secondItem="Bku-tK-hFi" secondAttribute="top" constant="10" id="eZT-Wb-nno"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mac-ez-8Uy" secondAttribute="bottom" constant="10" id="t3Q-Ch-cbr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Du-5s-7iM">
+                                <rect key="frame" x="0.0" y="30" width="375" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.85490196080000003" green="0.094117647060000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Q-IO-hop">
+                                <rect key="frame" x="20" y="145.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.85490196080000003" green="0.094117647060000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85490196078431369" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="A9Q-IO-hop" firstAttribute="leading" secondItem="pOv-09-WXW" secondAttribute="leading" constant="20" id="0IG-3g-hrF"/>
+                            <constraint firstItem="A9Q-IO-hop" firstAttribute="top" secondItem="eP3-sm-TId" secondAttribute="bottom" constant="20" id="4Fu-tj-Z1v"/>
+                            <constraint firstItem="iQx-yi-1qj" firstAttribute="top" secondItem="qml-so-vpu" secondAttribute="bottom" constant="20" id="6UW-3H-IoE"/>
+                            <constraint firstItem="pOv-09-WXW" firstAttribute="trailing" secondItem="1Du-5s-7iM" secondAttribute="trailing" id="8d8-bp-JhO"/>
+                            <constraint firstItem="pOv-09-WXW" firstAttribute="bottom" secondItem="iQx-yi-1qj" secondAttribute="bottom" constant="20" id="APW-nn-T3p"/>
+                            <constraint firstItem="qml-so-vpu" firstAttribute="centerX" secondItem="lbR-6Z-2Xg" secondAttribute="centerX" id="Avt-7v-18e"/>
+                            <constraint firstItem="1Du-5s-7iM" firstAttribute="top" secondItem="pOv-09-WXW" secondAttribute="top" constant="10" id="FE8-wy-GVF"/>
+                            <constraint firstItem="iQx-yi-1qj" firstAttribute="centerX" secondItem="lbR-6Z-2Xg" secondAttribute="centerX" id="GhS-Va-y95"/>
+                            <constraint firstItem="pOv-09-WXW" firstAttribute="trailing" secondItem="A9Q-IO-hop" secondAttribute="trailing" constant="20" id="M8V-gf-Vpz"/>
+                            <constraint firstItem="Br3-r5-mrO" firstAttribute="centerX" secondItem="lbR-6Z-2Xg" secondAttribute="centerX" id="Vmg-td-wsE"/>
+                            <constraint firstItem="eP3-sm-TId" firstAttribute="leading" secondItem="pOv-09-WXW" secondAttribute="leading" constant="10" id="W6y-4r-Y44"/>
+                            <constraint firstItem="qml-so-vpu" firstAttribute="top" secondItem="0l3-pN-8yq" secondAttribute="bottom" constant="20" id="j35-2r-Bhs"/>
+                            <constraint firstItem="1Du-5s-7iM" firstAttribute="leading" secondItem="pOv-09-WXW" secondAttribute="leading" id="nWf-7U-H1s"/>
+                            <constraint firstItem="eP3-sm-TId" firstAttribute="top" secondItem="1Du-5s-7iM" secondAttribute="bottom" constant="20" id="v41-qb-IPm"/>
+                            <constraint firstItem="0l3-pN-8yq" firstAttribute="centerX" secondItem="lbR-6Z-2Xg" secondAttribute="centerX" id="w0H-05-HxL"/>
+                            <constraint firstItem="pOv-09-WXW" firstAttribute="trailing" secondItem="eP3-sm-TId" secondAttribute="trailing" constant="10" id="yTQ-ea-ut7"/>
+                            <constraint firstItem="0l3-pN-8yq" firstAttribute="top" secondItem="Br3-r5-mrO" secondAttribute="bottom" constant="20" id="zXX-Dv-DPE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pOv-09-WXW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0k6-aQ-jhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1540" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shanaaya-crown" width="466" height="466"/>
+        <image name="tiara" width="386" height="290"/>
+    </resources>
+</document>
