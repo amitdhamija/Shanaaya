@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5F8EF84A206365D50067B68D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8EF849206365D50067B68D /* AppDelegate.swift */; };
-		5F8EF84C206365D50067B68D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8EF84B206365D50067B68D /* ViewController.swift */; };
-		5F8EF84F206365D50067B68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8EF84D206365D50067B68D /* Main.storyboard */; };
 		5F8EF851206365D50067B68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F8EF850206365D50067B68D /* Assets.xcassets */; };
 		5F8EF854206365D50067B68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8EF852206365D50067B68D /* LaunchScreen.storyboard */; };
+		5FA7B2F620636D4D001E1E59 /* PinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7B2F220636D4D001E1E59 /* PinkButton.swift */; };
+		5FA7B2F720636D4D001E1E59 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7B2F320636D4D001E1E59 /* QuizViewController.swift */; };
+		5FA7B2F820636D4D001E1E59 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7B2F420636D4D001E1E59 /* EventDetailsViewController.swift */; };
+		5FA7B2F920636D4D001E1E59 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7B2F520636D4D001E1E59 /* UserDetailsViewController.swift */; };
+		5FA7B2FB206370B6001E1E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA7B2FA206370B6001E1E59 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F8EF846206365D50067B68D /* Shanaaya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shanaaya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8EF849206365D50067B68D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F8EF84B206365D50067B68D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F8EF84E206365D50067B68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F8EF850206365D50067B68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F8EF853206365D50067B68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F8EF855206365D50067B68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA7B2F220636D4D001E1E59 /* PinkButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkButton.swift; sourceTree = "<group>"; };
+		5FA7B2F320636D4D001E1E59 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		5FA7B2F420636D4D001E1E59 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		5FA7B2F520636D4D001E1E59 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		5FA7B2FA206370B6001E1E59 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				5F8EF849206365D50067B68D /* AppDelegate.swift */,
-				5F8EF84B206365D50067B68D /* ViewController.swift */,
-				5F8EF84D206365D50067B68D /* Main.storyboard */,
+				5FA7B2F420636D4D001E1E59 /* EventDetailsViewController.swift */,
+				5FA7B2F220636D4D001E1E59 /* PinkButton.swift */,
+				5FA7B2F320636D4D001E1E59 /* QuizViewController.swift */,
+				5FA7B2F520636D4D001E1E59 /* UserDetailsViewController.swift */,
+				5FA7B2FA206370B6001E1E59 /* Main.storyboard */,
 				5F8EF850206365D50067B68D /* Assets.xcassets */,
 				5F8EF852206365D50067B68D /* LaunchScreen.storyboard */,
 				5F8EF855206365D50067B68D /* Info.plist */,
@@ -125,7 +134,7 @@
 			files = (
 				5F8EF854206365D50067B68D /* LaunchScreen.storyboard in Resources */,
 				5F8EF851206365D50067B68D /* Assets.xcassets in Resources */,
-				5F8EF84F206365D50067B68D /* Main.storyboard in Resources */,
+				5FA7B2FB206370B6001E1E59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +145,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8EF84C206365D50067B68D /* ViewController.swift in Sources */,
+				5FA7B2F820636D4D001E1E59 /* EventDetailsViewController.swift in Sources */,
+				5FA7B2F920636D4D001E1E59 /* UserDetailsViewController.swift in Sources */,
 				5F8EF84A206365D50067B68D /* AppDelegate.swift in Sources */,
+				5FA7B2F620636D4D001E1E59 /* PinkButton.swift in Sources */,
+				5FA7B2F720636D4D001E1E59 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5F8EF84D206365D50067B68D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F8EF84E206365D50067B68D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5F8EF852206365D50067B68D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N23Q93HX34;
 				INFOPLIST_FILE = Shanaaya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhamija.amit.Shanaaya;
@@ -289,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N23Q93HX34;
 				INFOPLIST_FILE = Shanaaya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhamija.amit.Shanaaya;

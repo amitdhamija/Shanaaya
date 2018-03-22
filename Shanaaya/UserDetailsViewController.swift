@@ -41,7 +41,6 @@ class UserDetailsViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         name = textField.text
-        print(name)
     }
     
     

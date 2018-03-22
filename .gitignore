@@ -1,3 +1,10 @@
+*.xcuserstate
+*.xcbkptlist
+Shanaaya.xcodeproj/xcuserdata/
+Shanaaya.xcodeproj/project.xcworkspace/xcuserdata/
+Shanaaya.xcodeproj/project.xcworkspace/xcshareddata/
+
+Pods/Pods.xcodeproj/xcuserdata/
 
 # Created by https://www.gitignore.io/api/swift,macos
 
